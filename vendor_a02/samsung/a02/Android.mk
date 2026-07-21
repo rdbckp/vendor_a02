@@ -1,1 +1,61 @@
 LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := TetheringOverlay
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/overlay/TetheringOverlay
+LOCAL_SRC_FILES := proprietary/overlay/TetheringOverlay/TetheringOverlay.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := SoftapOverlay
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/overlay/SoftapOverlay
+LOCAL_SRC_FILES := proprietary/overlay/SoftapOverlay/SoftapOverlay.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := SoftapOverlayWpa3
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/overlay/SoftapOverlayWpa3
+LOCAL_SRC_FILES := proprietary/overlay/SoftapOverlayWpa3/SoftapOverlayWpa3.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := SystemUIResOverlay
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/overlay/SystemUIResOverlay
+LOCAL_SRC_FILES := proprietary/overlay/SystemUIResOverlay/SystemUIResOverlay.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := framework-res__auto_generated_rro_vendor
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/overlay
+LOCAL_SRC_FILES := proprietary/overlay/framework-res__auto_generated_rro_vendor.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := TetheringOverlay_Gsi
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/overlay/TetheringOverlay_Gsi
+LOCAL_SRC_FILES := proprietary/overlay/TetheringOverlay_Gsi/TetheringOverlay_Gsi.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+include $(BUILD_PREBUILT)
